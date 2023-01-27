@@ -12,14 +12,84 @@
 <body>
   <!-- Header section including title(name) -->
   <header>
-    <div><h1>Jonathan
-      Beard</h1>
+    <div><h1>Jonathan Beard</h1>
+    <h3>Software Developer</h3>
     </div>
   </header>
+  <!-- Nav bar including in-page section link -->
+  <nav>
+    <a href="#intro">Intro</a>
+    <a href="#about">About Me</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
+  <main>
+    <!-- Intro section, text in left container, image on right, anchor for internal links -->
+    <section class="flex" id="intro">
+      <div class="left-container">
+        <h2>Hello! I'm Jon</h2>
+        <p>I am a software developer originally from England, now living in
+        the Dallas, TX area.</p>
+        <p>As a former educator and instructional designer, I love to create sites
+        that are as informative as they are aesthetically pleasing.</p>
+      </div>
+      <div class="right-container">
+        <img src="images/me-in-ny.jpg" class="image-circle" alt="Jon in New York City">
+      </div>
+    </section>
 
+    <hr>
+    <!-- About section, image on left, text on right, anchor for internal links -->
+    <section class="flex" id="about">
+      <div class="left-img">
+        <img src="images/tanq.jpg" class="image-rounded" alt="Former foster kitten 'Tanq' sitting on some of my crochet work">
+      </div>
+      <div class="right-container">
+        <h2>About Me</h2>
+        <!-- External links open in new tab -->
+        <p>After graduating from <a href="http://www.birmingham.ac.uk" 
+        target="_blank">The University of Birmingham</a> with a Bachelor's in Computer 
+          Science, circumstances, including a move to the US precluded me from pursuing
+          a career as a developer. I spent many years as a 5th grade teacher of Math 
+          and Science, but the COVID-19 pandemic made me re-evaluate my career choices.
+        </p>
+        <p>Strangely enough, it was through creating formulas and macros on a Google 
+          Sheet to track movie ratings that made me realize where my true passion lies.
+          As a student at <a href="http://www.thinkful.com" target="_blank">Thinkful</a>
+          I am enjoying my return to the world of coding. Better late than never, right?
+        </p>
+        <p>If I'm not working on code, you'll typically find me solving puzzles, 
+          learning a new craft such as crocheting, or fostering kittens for my local
+          animal shelter.</p>
+        <p>If you are looking to hire a new developer who is eager to learn and solve
+          problems, <a href="#contact">please get in touch</a>!</p>
+      </div>
+    </section>
 
+    <hr>
+    <!-- Contact section, title on left, text on right. External links open in new tab, anchor for internal links -->
+    <section class="flex" id="contact">
+      <div class="left-container">
+        <!-- Force h2 to left side, so that it lines up with containers above -->
+        <h2 style="text-align: left;">Contact Me</h2>
+      </div>
+      <div class="right-container">
+      <p>If you'd like to get in touch or follow me, you can find me at:</p>
+      <ul>
+        <li><a href="https://github.com/JonBeardDev" target="_blank">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/jonathan-beard-892750b/" target="_blank">LinkedIn</a>
+        </li>
+        <li><a href="mailto:jon.beard@gmail.com" target="_blank">Email</a></li>
+      </ul>
+      <p>I look forward to hearing from you!</p>
+      </div>
+    </section>
+  </main>
 
+  <!-- Footer with copyright -->
+  <footer>
+    <p>&copy Jonathan Beard</p>
+  </footer>
   
   <script src="script.js"></script>
 </body>

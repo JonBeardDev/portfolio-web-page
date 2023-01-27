@@ -1,22 +1,153 @@
+/* Set background color */
 html, body {
   height: 100%;
   width: 100%;
+  margin: 0;
+  background: #CACCC9;
 }
 
+/* Set header image and size */
 header {
-  background-image: url("/images/tiles.jpg");
-  height: 400px
+  height: 250px;
+  background: url("images/tiles.jpg");
+  background-size: cover;
 }
 
-header h1 {
+/* Centering title and subtitle */
+header div{
+  padding-top: 50px;
   text-align: center;
   color: white;
+}
+
+/* Title details including adding shadow to text */
+header h1 {
   font-family: Futura;
-  font-size: 68px;
+  font-size: 80px;
   text-transform: uppercase;
-  margin: 130px;
-  border: 10px solid #2F2F2F;
-  padding: 20px 20px;
+  margin-top: 0px;
+  margin-right: 30%;
+  margin-left: 30%;
+  margin-bottom: 0px;
+  padding: 0px 0px;
   text-shadow: 0px 0px 10px black;
   position: center;
 }
+
+/* Subtitle details */
+header h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  padding: 0px;
+}
+
+/* Nav and footer bar details */
+nav, footer {
+  background: #2F2F2F;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 25px;
+}
+
+/* Spacing out Nav links */
+nav a {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+/* Nav link colors and remove underline for cleaner look */
+nav a:link {
+  color: white;
+  text-decoration: none;
+}
+nav a:visited {
+  color: white;
+  text-decoration: none;
+}
+nav a:hover {
+  color: #728C9D;
+  text-decoration: none;
+}
+nav a:active {
+  color: #F6F930;
+  text-decoration: none;
+}
+
+/* Main body text color */
+main {
+  color: #2f2f2f;
+}
+
+/* Setting sections to be in the middle of the page with space either side */
+section {
+  margin: auto;
+  width: 75%;
+  padding-top: 30px;
+  padding-left: 25%;
+}
+
+/* Setting up flex section container for side-by-side containers */
+.flex {
+  display: flex;
+}
+
+/* Main body section headers */
+h2 {
+  text-align: center;
+  font-family: Futura;
+  font-size: 50px;
+}
+
+/* Body text size, match list bullets to regular text*/
+p, li {
+  font-size: 20px;
+}
+
+/* Set up left container size/position */
+.left-container {
+  width: 35%;
+  padding: 30px;
+}
+
+/* Set up left container size/position (for image)*/
+.left-img {
+  width: 35%;
+  padding: 30px;
+  padding-top: 200px;
+}
+
+/* Set up left container size/position - flex-grow allows it to take the remainder of the space of the section container */
+.right-container {
+  flex-grow: 1;
+  height: 100px;
+  padding-right: 25%;
+}
+
+/* Turn square image into circle */
+.image-circle {
+  border-radius: 50%;
+  height: 300px;
+}
+
+/* Round corners of rectangular image */
+.image-rounded {
+  border-radius: 10px;
+  height: 300px;
+}
+
+/* Horizontal rule styling, including left-center-right gradient color change */
+hr {
+  width: 75%;
+  border: 0;
+  height: 3px;
+  background: #2f2f2f;
+  background-image: linear-gradient(to right, #878787, #2f2f2f, #878787);
+  margin-top: 50px;
+}
+
+/* Main body link colors */
+main a:link     {color: #728c9d;}
+main a:visited  {color: #436436;}
+main a:hover    {color: #878787;}
+main a:active   {color: #f6f930;}
