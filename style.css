@@ -3,13 +3,13 @@ html, body {
   height: 100%;
   width: 100%;
   margin: 0;
-  background: #CACCC9;
+  background: #C7C7E9;
 }
 
 /* Set header image and size */
 header {
   height: 250px;
-  background: url("images/tiles.jpg");
+  background: url("images/stars.jpg");
   background-size: cover;
 }
 
@@ -80,7 +80,7 @@ main {
 }
 
 /* Setting sections to be in the middle of the page with space either side */
-section {
+article {
   margin: auto;
   width: 75%;
   padding-top: 30px;
@@ -114,10 +114,10 @@ p, li {
 .left-img {
   width: 35%;
   padding: 30px;
-  padding-top: 200px;
+  padding-top: 100px;
 }
 
-/* Set up left container size/position - flex-grow allows it to take the remainder of the space of the section container */
+/* Set up right container size/position - flex-grow allows it to take the remainder of the space of the section container */
 .right-container {
   flex-grow: 1;
   height: 100px;
@@ -147,7 +147,7 @@ hr {
 }
 
 /* Main body link colors */
-main a:link     {color: #728c9d;}
-main a:visited  {color: #436436;}
-main a:hover    {color: #878787;}
+main a:link     {color: #2f2f2f;}
+main a:visited  {color: #0E7C7B;}
+main a:hover    {color: #17BEBB;}
 main a:active   {color: #f6f930;}
