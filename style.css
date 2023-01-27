@@ -1,0 +1,22 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+header {
+  background-image: url("/images/tiles.jpg");
+  height: 400px
+}
+
+header h1 {
+  text-align: center;
+  color: white;
+  font-family: Futura;
+  font-size: 68px;
+  text-transform: uppercase;
+  margin: 130px;
+  border: 10px solid #2F2F2F;
+  padding: 20px 20px;
+  text-shadow: 0px 0px 10px black;
+  position: center;
+}
